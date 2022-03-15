@@ -1,103 +1,839 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans:wght@400;700&family=Roboto:wght@500&display=swap"
+          rel="stylesheet">
+    <title>PizzaShop</title>
 </head>
 <body>
 <header id="header">
     <div class="container">
         <div class="header">
-            <h1 class="logo">Pizza </h1>
-            <h1 class="logo_o">Shop</h1>
-            <div class="header_title">
-                <div class="location">
-                    <img src="./img/location.svg" alt="">
-                    <h5>Турусбекова 109\3</h5>
+            <div class="logo">
+                <h1 class="first">Pizza </h1>
+                <h1 class="last"> Shop</h1>
+            </div>
+            <div class="link">
+                <div class="link_location"><a href="#" class="location">
+                    <h4 class="f_title"><img src="./img/location.svg" alt=""> Турусбекова 109\3</h4></a>
                 </div>
-                <div class="call">
-                    <img src="./img/call.svg" alt="">
-                    <h5>+996 502 07 17 73</h5>
+                <div class="link_call">
+                    <a href="tel:0702868596"><h4 class="f_title"><img src="./img/call.svg" alt=""> +996 502 07 17 73
+                    </h4></a>
                 </div>
             </div>
-            <div class="icons">
-
-                <img class="weather_icons" src="./img/night%20weather.svg" alt="">
-                <img class="weather_icons" src="./img/search.svg" alt="">
-                <img class="weather_icons" src="./img/cart.svg" alt="">
-                <img class="weather_icons" src="./img/user.svg" alt="">
-
+            <div class="btn_header">
+                <button class="btn"><a href="dark..html"><img src="./img/night%20weather.svg" alt=""></a></button>
+                <button class="btn"><img src="./img/search.svg" alt=""></button>
+                <button class="btn"><img src="./img/shop.svg" alt=""></button>
+                <button class="btn"><img src="./img/user.svg" alt=""></button>
             </div>
         </div>
     </div>
-
 </header>
-<section id="hero">
+<section id="pizza">
     <div class="container">
-        <div class="btn1">
-            <button class="btn_hero"> Пицца</button>
-            <button class="btn_hero"> Суши</button>
-            <button class="btn_hero"> Комбо</button>
-            <button class="btn_hero">Десерты</button>
-            <button class="btn_hero"> Закуски</button>
+        <div class="buttons">
+            <button class="pizza_btn">Пицца</button>
+            <button class="pizza_btn">Суши</button>
+            <button class="pizza_btn">Комбо</button>
+            <button class="pizza_btn">Десерты</button>
+            <button class="pizza_btn">Закуски</button>
         </div>
+    </div>
+</section>
+<section id="images">
+    <div class="container">
         <div class="slider">
-            <img src="./img/slid.png" alt="">
-            <img src="./img/slid.png" alt="">
-            <img src="./img/slid.png" alt="">
-        </div>
-    </div>
-</section>
-<section id="news">
-    <div class="container">
-        <div class="img">
-            <div class="news_img">
-                <img class="news _img1" src="./img/image1.png" alt="">
-                <img class="news _img1" src="./img/image2.png" alt="">
+            <img src="./img/slid.png" alt="" class="slider_item">
+            <img src="./img/2slid.jpg" alt="" class="slider_item">
+            <img src="./img/3slid.jpg" alt="" class="slider_item"></div>
+
+        <div class="images">
+            <div class="images2">
+                <img class="item_images1" src="./img/image1.png" alt="" width="650">
+                <img class="item_images1" src="./img/image2.png" alt="">
             </div>
-            <img src="./img/image3.png" alt="">
+            <img class="item_images" src="./img/image3.png" alt="">
         </div>
     </div>
 </section>
+
 <section id="order">
     <div class="container">
-        <div class="order">
-            <div class="img_title"><h3>Часто заказывают:</h3></div>
-            <div class="block_order">
-                <div class="block_btn">
-                    <div class="img"><img src="./img/pizza.svg" alt=""></div>
-                    <div class="title">Пицца</div>
+        <div class="order_item">
+            <h2 class="order__title">Часто заказывают:</h2>
+            <div class="buttons_order">
+                <div class="button_order">
+                    <button class="btn_order">
+                        <span><img class="img_order" src="./img/pizza.svg" alt=""></span>
+                        <span class="order_title"><h4>Пицца</h4></span>
+                    </button>
 
-                </div>
-                <div class="block_btn">
-                    <div class="img"><img src="./img/rolly.png" alt=""></div>
-                    <div class="title">Роллы</div>
+                    <div class="button_order">
+                        <button class="btn_order">
+                            <span><img class="img_order" src="./img/rolly.png" alt=""></span>
+                            <span class="order_title"><h4>Роллы</h4></span>
+                        </button>
 
-                </div>
-                <div class="block_btn">
-                    <div class="img"><img src="./img/combo.png" alt=""></div>
-                    <div class="title">Комбо 999 сом</div>
+                        <div class="button_order">
+                            <button class="btn_order">
+                                <span><img class="img_order" src="./img/combo.png" alt=""></span>
+                                <span class="order_title"><h4>Комбо</h4></span>
+                            </button>
 
-                </div>
-                <div class="block_btn">
-                    <div class="img"><img src="./img/free.png" alt=""></div>
-                    <div class="title">Каротошка фри</div>
+                            <div class="button_order">
+                                <button class="btn_order">
+                                    <span><img class="img_order" src="./img/free.png" alt=""></span>
+                                    <span class="order_titles"><h4>Картошка фри</h4></span>
+                                </button>
 
-                </div>
-                <div class="block_btn">
-                    <div class="img"><img src="./img/desert.png" alt=""></div>
-                    <div class="title">Десерт творожный</div>
-
+                                <div class="button_order">
+                                    <button class="btn_order">
+                                        <span><img class="img_order" src="./img/desert.png" alt=""></span>
+                                        <span class="order_titles"><h4>Десерт творожный</h4></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<section id="menu">
+    <div class="container">
+        <div class="menu_item">
+
+            <h2 class="order__title">Пицца:</h2>
+
+            <div class="first_menu">
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Папа Микс Рэнч</h4>
+                        <p class="four">Четыре любимых пиццы в одной:
+                            Цыпленок Рэнч, Ветчина и грибы, Четыре Сыра, Спайси Рэнч</p>
+                        <div class="foot">
+                            <h4 class="price">$115.00</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/mix.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Греческая</h4>
+                        <p class="four">Фирменный томатный соус, Моцарелла, мягкий молодой сыр,
+                            маслины, лук, сочные томаты, острый халапеньо и орегано</p>
+                        <div class="foot">
+                            <h4 class="price">$365 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/greek.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Сырная</h4>
+                        <p class="four">Фирменный томатный соус, Моцарелла</p>
+                        <div class="foot">
+                            <h4 class="price">250 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/cheese.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Маргарита</h4>
+                        <p class="four">Фирменный томатный соус, Томаты, Орегано, Моцарелла</p>
+                        <div class="foot">
+                            <h4 class="price">300 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/margaret.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second_menu">
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Пепперони</h4>
+                        <p class="four">Фирменный томатный соус, Пепперони, Моцарелла. Пикантная!</p>
+                        <div class="foot">
+                            <h4 class="price">365 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/pepperoni.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Чикен Блю Чиз</h4>
+                        <p class="four">Нежное куриное филе с кусочками сыра блю чиз, соусом Пармеджано,
+                            смесью итальянских сыров и сыром Моцарелла </p>
+                        <div class="foot">
+                            <h4 class="price">115 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/checcen.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">10 Сыров </h4>
+                        <p class="four">Моцарелла, классический Чильеджини, мягкий молодой сыр, смесь 3х копченых
+                            итальянских сыров,
+                            сыр с голубой плесенью, Реджанито, Пармезан, Фонтин</p>
+                        <div class="foot">
+                            <h4 class="price">485 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/10cheeese.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Хот Папа </h4>
+                        <p class="four">Фирменный томатный соус, Пепперони, Ароматная говядина, Халапеньо,
+                            Моцарелла </p>
+                        <div class="foot">
+                            <h4 class="price">400 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/papa.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="more_btn">Подробнее</button>
+        </div>
+    </div>
+</section>
+<section id="menu2">
+    <div class="container">
+        <div class="menu_item">
+
+            <h2 class="order__title">Комбо:</h2>
+            <div class="first_menu">
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Джо Комбо </h4>
+                        <p class="four">Чикен Джонер + Картофельные дольки+
+                            Pepsi 0,5 л (на 1 человека)</p>
+                        <div class="foot">
+                            <h4 class="price">$115.00</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/djo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Фаст Комбо </h4>
+                        <p class="four">Пицца Цыпленок Рэнч 23 см +
+                            Картофель-фри + Pepsi 0,5 л (на 1-2 человек)</p>
+                        <div class="foot">
+                            <h4 class="price">440 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/fast.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Лайт Комбо </h4>
+                        <p class="four">Салат Цезарь + Сырные Палочки +
+                            Lipton Ice Tea Лимон 0,5 л (на 1-2 человек)</p>
+                        <div class="foot">
+                            <h4 class="price">460 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/lite.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Кибер Комбо </h4>
+                        <p class="four">Пицца Цыпленок Барбекю 23 см + Пицца Сырная
+                            23 см + Pepsi 1 л (на 2-3 человека)</p>
+                        <div class="foot">
+                            <h4 class="price">600 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/ciber.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second_menu">
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Кинг Комбо </h4>
+                        <p class="four">Пицца Пепперони 30 см + Картофельные дольки +
+                            Pepsi 1 л (на 2-3 человека)</p>
+                        <div class="foot">
+                            <h4 class="price">650 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/king.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Пати Комбо </h4>
+                        <p class="four">Пицца Пепперони 30 см + Пицца Ветчина и
+                            грибы 30 см + Pepsi 2 л ( на 3-4 человека) </p>
+                        <div class="foot">
+                            <h4 class="price">980 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/checcen.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Сет №1</h4>
+                        <p class="four">3 пиццы 30 см на традиционном тесте (на 6-10 человек):
+                            Пепперони, Цыпленок Рэнч, Маргарита, Pepsi 1 л</p>
+                        <div class="foot">
+                            <h4 class="price">1 380 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/set.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Сет №2</h4>
+                        <p class="four">5 пицц 30 см на традиционном тесте (на 10-13 человек): Пепперони, Цыпленок Рэнч,
+                            Сырная, Альфредо, Мексиканская, Pepsi 2 л</p>
+                        <div class="foot">
+                            <h4 class="price">400 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/set2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="more_btn">Подробнее</button>
+        </div>
+    </div>
+</section>
+<section id="menu3">
+    <div class="container">
+        <div class="menu_item">
+
+            <h2 class="order__title">Закуски:</h2>
+
+            <div class="first_menu">
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Картофельные Дольки</h4>
+                        <p class="four">Ролл с куриным филе, томатами, луком, маринованными огурчиками и
+                            соусом 1000 островов, сыр "Моцарелла"</p>
+                        <div class="foot">
+                            <h4 class="price">170 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/mix.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Хлебные Ломтики</h4>
+                        <p class="four">Соус на основе растительных масел Чесночный Ранч, сыр моцарелла, пшеничная
+                            тортилья,
+                            запеченная куриная грудка, томаты, шампиньоны</p>
+                        <div class="foot">
+                            <h4 class="price">40 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/lom.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Кальзоне Мясной</h4>
+                        <p class="four">Куриная грудка, лук, сыр моцарелла,
+                            соус «Барбекью»</p>
+                        <div class="foot">
+                            <h4 class="price">190 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/kolzone.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Халапеньо ролл 8шт</h4>
+                        <p class="four">Фирменное тесто «Папа Джонс», соус
+                            "Особый Чесночный", сыр Моцарелла, Халапеньо</p>
+                        <div class="foot">
+                            <h4 class="price">280 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/halapen.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        <div class="second_menu">
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Картофель-фри</h4>
+                        <p class="four">Картофель — натуральныйкартофель,полуфабрикат замороженный
+                            Масло растительное — смесь Соль йодированная Экстра</p>
+                        <div class="foot">
+                            <h4 class="price">650 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/free2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Куриные Крылышки Барбекю</h4>
+                        <p class="four">Пицца Пепперони 30 см + Пицца Ветчина и
+                            грибы 30 см + Pepsi 2 л ( на 3-4 человека)</p>
+                        <div class="foot">
+                            <h4 class="price">980 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/chicken.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            <div class="order_block"></div>
+            <div class="order_block"></div>
+        </div>
+            <button class="more_btn">Подробнее</button>
     </div>
     </div>
 </section>
+<section id="menu4">
+    <div class="container">
+        <div class="menu_item">
 
+            <h2 class="order__title">Суши:</h2>
+
+            <div class="first_menu">
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Филадельфия классик</h4>
+                        <p class="four">Лосось, мягкий сыр, огурец, нори, рис</p>
+                        <div class="foot">
+                            <h4 class="price">360 сом за 8 шт</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/sushi.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Калифорния с лососем</h4>
+                        <p class="four">Лосось, майонез, тобико красная, огурец, нори, рис</p>
+                        <div class="foot">
+                            <h4 class="price">340 сом за 8 шт</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/sushi2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Норвежский</h4>
+                        <p class="four">Хлопья нори, лосось, мягкий сыр, огурец, нори, рис</p>
+                        <div class="foot">
+                            <h4 class="price">280 сом за 8 шт</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/sushi3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Чиз лосось</h4>
+                        <p class="four">Хлопья нори, лосось, мягкий сыр, огурец, нори, рис</p>
+                        <div class="foot">
+                            <h4 class="price">350 сом за 8 шт</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/sushi4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second_menu">
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Чиз угорь</h4>
+                        <p class="four">Угорь, кунжут, мягкий сыр, нори, рис</p>
+                        <div class="foot">
+                            <h4 class="price">425 сом за 8 шт</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/sushi5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Ямайка</h4>
+                        <p class="four">Лосось, масаго оранжевая, мягкий сыр, огурец, нори, рис</p>
+                        <div class="foot">
+                            <h4 class="price">370 сом за 8 шт</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/sushi6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Мексиканский</h4>
+                        <p class="four">Спайси соус, тобико оранжевая, креветка, огурец,
+                            нори, рис</p>
+                        <div class="foot">
+                            <h4 class="price">320 сом за 8 шт</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/sushi7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Окинава</h4>
+                        <p class="four">Тобико оранжевая, креветка, мягкий сыр, огурец, нори, рис</p>
+                        <div class="foot">
+                            <h4 class="price">290 сом за 8 шт</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/sushi8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="more_btn">Подробнее</button>
+        </div>
+    </div>
+</section>
+
+<section id="menu5">
+    <div class="container">
+        <div class="menu_item">
+
+            <h2 class="order__title">Десерты:</h2>
+
+            <div class="first_menu">
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Донат Клубничный</h4>
+                        <p class="four">Донат с клубничной начинкой и глазурью
+                            со вкусом клубники</p>
+                        <div class="foot">
+                            <h4 class="price">120 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/desert1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Донат Кокосовый</h4>
+                        <p class="four">Донат кокосовый с шоколадной глазурью и кокосовой посыпкой</p>
+                        <div class="foot">
+                            <h4 class="price">120 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/desert2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Донат Тройной шоколад</h4>
+                        <p class="four">Донат с шоколадной начинкой, шоколадной
+                            глазурью и шоколадной посыпкой</p>
+                        <div class="foot">
+                            <h4 class="price">120 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/desert3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Маффин с кусочкамишоколада</h4>
+                        <p class="four">Шоколадный маффин, декорированный кусочками
+                            шоколада</p>
+                        <div class="foot">
+                            <h4 class="price">140 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/desert4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second_menu">
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Печенье кукис с Шоколадной Глазурью</h4>
+                        <p class="four">Фирменный томатный соус, Пепперони, Моцарелла. Пикантная!</p>
+                        <div class="foot">
+                            <h4 class="price">100 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/desert5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Шоколадный фондан</h4>
+                        <p class="four">Нежный шоколадный бисквит с жидким центром </p>
+                        <div class="foot">
+                            <h4 class="price">270 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/desert6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block">
+                    <div class="block">
+                        <h4 class="block_title">Шоко скролс</h4>
+                        <p class="four">Сладкие роллы с шоколадной пастой под шоколадной
+                            крошкой и соусом</p>
+                        <div class="foot">
+                            <h4 class="price">250 сом</h4>
+                            <div class="like"><img src="./img/heart.svg" alt="">
+                                <img src="./img/shop1.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="new"><img src="./img/new.svg" alt=""></div>
+                    <div class="block2">
+                        <div class="menu_img"><img src="./img/desert7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order_block"></div>
+            </div>
+                <button class="more_btn">Подробнее</button>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="footer">
+    <div class="container">
+        <div class="footer">
+
+            <div class="footer_items">
+                <div class="logo_footer">
+                    <h2 class="pizzaShop">Pizza Shop</h2></div>
+                <div class="link2"><a href="#" class="function"> Главная</a>
+                    <a href="#" class="function"> О нас</a>
+                    <a href="#" class="function"> Отзывы</a>
+                </div>
+                <div class="icons_footer">
+                    <button class="icons_btn">
+                        <img src="./img/instagram.svg" alt=""></button>
+                    <button class="icons_btn">
+                        <img src="./img/github.svg" alt=""></button>
+                    <button class="icons_btn">
+                        <img src="./img/telegram.svg" alt=""></button>
+                    <button class="icons_btn">
+                        <img src="./img/vk.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <script src="./js/jquery.min.js"></script>
 <script src="./js/slick.min.js"></script>
